@@ -17,6 +17,62 @@ define('SAFIR_MENU_CACHE_TIME', WEEK_IN_SECONDS);
 define('SAFIR_WIDGET_CACHE_TIME', WEEK_IN_SECONDS);
 
 // ============================================================
+// LOAD LIB FUNCTIONS
+// ============================================================
+
+/**
+ * Tema yardımcı fonksiyonlarını yükle
+ */
+
+// Sabitler
+include(get_template_directory() . "/lib/functions/constant.php");
+
+// Temel tema fonksiyonları
+include(get_template_directory() . "/lib/functions/theme.php");
+
+// Ortak fonksiyonlar (safirthumb, safirText, vb.)
+include(get_template_directory() . "/lib/functions/commonfunctions.php");
+
+// İkonlar (safirIcon, themeIcon)
+include(get_template_directory() . "/lib/functions/icons.php");
+
+// Menüler (safir_nav_menu)
+include(get_template_directory() . "/lib/functions/menus.php");
+
+// Sidebar'lar
+include(get_template_directory() . "/lib/functions/sidebars.php");
+
+// Enqueue (CSS/JS yükleme)
+include(get_template_directory() . "/lib/functions/enqueue.php");
+
+// Admin enqueue
+include(get_template_directory() . "/lib/functions/adminenqueue.php");
+
+// Body ve head fonksiyonları
+include(get_template_directory() . "/lib/functions/bodyhead.php");
+
+// Breadcrumbs
+include(get_template_directory() . "/lib/functions/breadcrumbs.php");
+
+// Cache fonksiyonları
+include(get_template_directory() . "/lib/functions/cache.php");
+
+// Fontlar
+include(get_template_directory() . "/lib/functions/fonts.php");
+
+// Gutenberg
+include(get_template_directory() . "/lib/functions/gutenberg.php");
+
+// Metabox
+include(get_template_directory() . "/lib/functions/metabox.php");
+
+// Navigasyon
+include(get_template_directory() . "/lib/functions/safirnavi.php");
+
+// Upgrade
+include(get_template_directory() . "/lib/functions/upgrade.php");
+
+// ============================================================
 // CORE FUNCTIONS
 // ============================================================
 
@@ -92,18 +148,8 @@ function safirLogo() {
 }
 
 /**
- * Lazy load için görsel attribute'ları
- * @param string $image Görsel URL'i
+ * REMOVED: safirLazyThumb() artık lib/functions/commonfunctions.php dosyasında
  */
-function safirLazyThumb($image) {
-    if (xoption('lazyload')) {
-        // Lazy load aktifse
-        echo 'data-src="' . esc_url($image) . '" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="lazy"';
-    } else {
-        // Normal yükleme
-        echo 'src="' . esc_url($image) . '"';
-    }
-}
 
 // ============================================================
 // LISANS SİSTEMİ (BYPASS)
@@ -404,89 +450,239 @@ function safir_sync_customizer_to_xoption() {
  */
 add_action('widgets_init', 'safir_load_widgets');
 function safir_load_widgets() {
-    // Widgets.json dosyasını oku
-    $widgets_json = get_template_directory() . '/lib/safirtema/widgets.json';
-
-    if (file_exists($widgets_json)) {
-        $widgets_data = json_decode(file_get_contents($widgets_json), true);
-
-        if (is_array($widgets_data)) {
-            foreach ($widgets_data as $widget_id => $widget_config) {
-                // Her widget için dinamik class oluştur
-                safir_register_dynamic_widget($widget_id, $widget_config);
-            }
-        }
-    }
-
-    // Manuel widget dosyalarını yükle
-    $widget_files = array(
-        'advancedPostsWidget1',
-        'advancedPostsWidget2',
-        'advancedPages',
-        'categoriesWidget',
-        'contactWidget',
-        'referencesWidget'
-    );
-
-    foreach ($widget_files as $widget_file) {
-        $widget_path = get_template_directory() . '/widgets/' . $widget_file . '.php';
-        if (file_exists($widget_path)) {
-            include_once($widget_path);
-        }
-    }
+    // Widget class'larını kaydet
+    safir_register_widget_classes();
 }
 
 /**
- * Dinamik widget register
+ * Widget class'larını kaydet
  */
-function safir_register_dynamic_widget($widget_id, $config) {
-    // Widget class'ı dinamik olarak oluştur
-    $class_name = 'Safir_Dynamic_Widget_' . ucfirst($widget_id);
+function safir_register_widget_classes() {
 
-    if (!class_exists($class_name)) {
-        $widget_class = "
-        class {$class_name} extends WP_Widget {
-            public function __construct() {
-                parent::__construct(
-                    '{$widget_id}',
-                    '" . (isset($config['name']) ? $config['name'] : $widget_id) . "',
-                    array('description' => '" . (isset($config['description']) ? $config['description'] : '') . "')
-                );
-            }
+    // Base Safir Widget Class
+    if (!class_exists('Safir_Widget_Base')) {
+        class Safir_Widget_Base extends WP_Widget {
+            protected $template_file = '';
 
-            public function widget(\$args, \$instance) {
-                echo \$args['before_widget'];
-                if (!empty(\$instance['title'])) {
-                    echo \$args['before_title'] . apply_filters('widget_title', \$instance['title']) . \$args['after_title'];
+            public function widget($args, $instance) {
+                global $widgetPlace;
+
+                // Widget değişkenlerini ayarla
+                extract($instance);
+
+                // Varsayılan değerler
+                if (!isset($title)) $title = '';
+                if (!isset($slogan)) $slogan = '';
+                if (!isset($icon)) $icon = '';
+                if (!isset($color)) $color = '';
+                if (!isset($lineBg)) $lineBg = '';
+                if (!isset($grayBg)) $grayBg = '';
+
+                // Widget template'ini yükle
+                if ($this->template_file && file_exists(get_template_directory() . '/widgets/' . $this->template_file)) {
+                    include(get_template_directory() . '/widgets/' . $this->template_file);
                 }
-                echo '<div class=\"safir-widget-content\">';
-                echo '<p>Widget: " . $widget_id . "</p>';
-                echo '</div>';
-                echo \$args['after_widget'];
             }
 
-            public function form(\$instance) {
-                \$title = !empty(\$instance['title']) ? \$instance['title'] : '';
+            public function form($instance) {
+                $title = !empty($instance['title']) ? $instance['title'] : '';
                 ?>
                 <p>
-                    <label for=\"<?php echo \$this->get_field_id('title'); ?>\">Başlık:</label>
-                    <input class=\"widefat\" id=\"<?php echo \$this->get_field_id('title'); ?>\"
-                           name=\"<?php echo \$this->get_field_name('title'); ?>\" type=\"text\"
-                           value=\"<?php echo esc_attr(\$title); ?>\">
+                    <label for="<?php echo $this->get_field_id('title'); ?>">Başlık:</label>
+                    <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>"
+                           name="<?php echo $this->get_field_name('title'); ?>" type="text"
+                           value="<?php echo esc_attr($title); ?>">
                 </p>
                 <?php
             }
 
-            public function update(\$new_instance, \$old_instance) {
-                \$instance = array();
-                \$instance['title'] = (!empty(\$new_instance['title'])) ? strip_tags(\$new_instance['title']) : '';
-                return \$instance;
+            public function update($new_instance, $old_instance) {
+                $instance = array();
+                foreach ($new_instance as $key => $value) {
+                    $instance[$key] = strip_tags($value);
+                }
+                return $instance;
             }
         }
-        ";
+    }
 
-        eval($widget_class);
-        register_widget($class_name);
+    // Categories Widget
+    if (!class_exists('SfrCategoriesWidget')) {
+        class SfrCategoriesWidget extends Safir_Widget_Base {
+            protected $template_file = 'categoriesWidget.php';
+
+            public function __construct() {
+                parent::__construct('sfrcategorieswidget', 'Safir Kategoriler',
+                    array('description' => 'Kategorileri gösterir'));
+            }
+
+            public function widget($args, $instance) {
+                global $widgetPlace;
+
+                // Varsayılan değerler
+                $title = isset($instance['title']) ? $instance['title'] : '';
+                $slogan = isset($instance['slogan']) ? $instance['slogan'] : '';
+                $icon = isset($instance['icon']) ? $instance['icon'] : '';
+                $color = isset($instance['color']) ? $instance['color'] : '';
+                $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
+                $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
+                $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+                $count = isset($instance['count']) ? $instance['count'] : '';
+                $exclude = isset($instance['exclude']) ? $instance['exclude'] : '';
+                $include = isset($instance['include']) ? $instance['include'] : '';
+
+                // Template'i yükle
+                if (file_exists(get_template_directory() . '/widgets/' . $this->template_file)) {
+                    include(get_template_directory() . '/widgets/' . $this->template_file);
+                }
+            }
+        }
+        register_widget('SfrCategoriesWidget');
+    }
+
+    // Advanced Posts Widget 1
+    if (!class_exists('SfrAdvancedPostsWidget1')) {
+        class SfrAdvancedPostsWidget1 extends Safir_Widget_Base {
+            protected $template_file = 'advancedPostsWidget1.php';
+
+            public function __construct() {
+                parent::__construct('sfradvancedpostswidget1', 'Safir Gelişmiş Yazılar 1',
+                    array('description' => 'Gelişmiş yazı listesi'));
+            }
+
+            public function widget($args_widget, $instance) {
+                global $widgetPlace;
+
+                // Varsayılan değerler
+                $title = isset($instance['title']) ? $instance['title'] : '';
+                $slogan = isset($instance['slogan']) ? $instance['slogan'] : '';
+                $icon = isset($instance['icon']) ? $instance['icon'] : '';
+                $color = isset($instance['color']) ? $instance['color'] : '';
+                $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
+                $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
+                $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+                $number = isset($instance['number']) ? $instance['number'] : 5;
+                $offset = isset($instance['offset']) ? $instance['offset'] : 0;
+                $postOrder = isset($instance['postOrder']) ? $instance['postOrder'] : '';
+
+                // WP_Query args
+                $args = array(
+                    'posts_per_page' => $number,
+                    'offset' => $offset,
+                    'post_status' => 'publish'
+                );
+
+                // Template'i yükle
+                if (file_exists(get_template_directory() . '/widgets/' . $this->template_file)) {
+                    include(get_template_directory() . '/widgets/' . $this->template_file);
+                }
+            }
+        }
+        register_widget('SfrAdvancedPostsWidget1');
+    }
+
+    // Advanced Posts Widget 2
+    if (!class_exists('SfrAdvancedPostsWidget2')) {
+        class SfrAdvancedPostsWidget2 extends Safir_Widget_Base {
+            protected $template_file = 'advancedPostsWidget2.php';
+
+            public function __construct() {
+                parent::__construct('sfradvancedpostswidget2', 'Safir Gelişmiş Yazılar 2',
+                    array('description' => 'Gelişmiş yazı listesi 2'));
+            }
+
+            public function widget($args_widget, $instance) {
+                global $widgetPlace;
+
+                // Varsayılan değerler
+                $title = isset($instance['title']) ? $instance['title'] : '';
+                $slogan = isset($instance['slogan']) ? $instance['slogan'] : '';
+                $icon = isset($instance['icon']) ? $instance['icon'] : '';
+                $color = isset($instance['color']) ? $instance['color'] : '';
+                $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
+                $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
+                $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+                $number = isset($instance['number']) ? $instance['number'] : 5;
+                $offset = isset($instance['offset']) ? $instance['offset'] : 0;
+
+                // WP_Query args
+                $args = array(
+                    'posts_per_page' => $number,
+                    'offset' => $offset,
+                    'post_status' => 'publish'
+                );
+
+                // Template'i yükle
+                if (file_exists(get_template_directory() . '/widgets/' . $this->template_file)) {
+                    include(get_template_directory() . '/widgets/' . $this->template_file);
+                }
+            }
+        }
+        register_widget('SfrAdvancedPostsWidget2');
+    }
+
+    // Contact Widget
+    if (!class_exists('SfrContactWidget')) {
+        class SfrContactWidget extends Safir_Widget_Base {
+            protected $template_file = 'contactWidget.php';
+
+            public function __construct() {
+                parent::__construct('sfrcontactwidget', 'Safir İletişim',
+                    array('description' => 'İletişim bilgileri'));
+            }
+        }
+        register_widget('SfrContactWidget');
+    }
+
+    // References Widget
+    if (!class_exists('SfrReferencesWidget')) {
+        class SfrReferencesWidget extends Safir_Widget_Base {
+            protected $template_file = 'referencesWidget.php';
+
+            public function __construct() {
+                parent::__construct('sfrreferenceswidget', 'Safir Referanslar',
+                    array('description' => 'Referanslar'));
+            }
+        }
+        register_widget('SfrReferencesWidget');
+    }
+
+    // Advanced Pages Widget
+    if (!class_exists('SfrAdvancedPages')) {
+        class SfrAdvancedPages extends Safir_Widget_Base {
+            protected $template_file = 'advancedPages.php';
+
+            public function __construct() {
+                parent::__construct('sfradvancedpages', 'Safir Gelişmiş Sayfalar',
+                    array('description' => 'Gelişmiş sayfa listesi'));
+            }
+
+            public function widget($args_widget, $instance) {
+                global $widgetPlace;
+
+                // Varsayılan değerler
+                $title = isset($instance['title']) ? $instance['title'] : '';
+                $slogan = isset($instance['slogan']) ? $instance['slogan'] : '';
+                $icon = isset($instance['icon']) ? $instance['icon'] : '';
+                $color = isset($instance['color']) ? $instance['color'] : '';
+                $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
+                $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
+                $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+
+                // WP_Query args
+                $args = array(
+                    'post_type' => 'page',
+                    'posts_per_page' => -1,
+                    'post_status' => 'publish'
+                );
+
+                // Template'i yükle
+                if (file_exists(get_template_directory() . '/widgets/' . $this->template_file)) {
+                    include(get_template_directory() . '/widgets/' . $this->template_file);
+                }
+            }
+        }
+        register_widget('SfrAdvancedPages');
     }
 }
 
