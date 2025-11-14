@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Safir Pusula - Modern ve Profesyonel Web Sitesi">
+    <title>Safir Pusula - Ana Sayfa</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/lib/owl-carousel/owl.carousel.min.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="assets/lib/fancybox/jquery.fancybox.min.css">
+
+    <style>
+        /* Demo İçerik Stilleri */
+        .demo-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 100px 0;
+            color: white;
+            text-align: center;
+        }
+        .demo-hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .demo-hero p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+        .demo-section {
+            padding: 60px 0;
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .demo-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .demo-card:hover {
+            transform: translateY(-5px);
+        }
+        .demo-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        .innerContainer {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Topbar -->
+<div id="topbar">
+    <div class="innerContainer">
+        <div class="leftBlock">
+            <div class="item phone">
+                <svg class="icon" width="16" height="16"><use href="#icon-phone"></use></svg>
+                +90 123 456 7890
+            </div>
+            <div class="item email">
+                <svg class="icon" width="16" height="16"><use href="#icon-email"></use></svg>
+                info@example.com
+            </div>
+        </div>
+        <div class="rightBlock">
+            <div id="topSocial">
+                <ul class="safirSocial">
+                    <li class="facebook"><a href="#" title="Facebook" target="_blank"><svg class="icon" width="16" height="16"><use href="#icon-facebook"></use></svg></a></li>
+                    <li class="twitter"><a href="#" title="Twitter" target="_blank"><svg class="icon" width="16" height="16"><use href="#icon-twitter"></use></svg></a></li>
+                    <li class="instagram"><a href="#" title="Instagram" target="_blank"><svg class="icon" width="16" height="16"><use href="#icon-instagram"></use></svg></a></li>
+                    <li class="youtube"><a href="#" title="Youtube" target="_blank"><svg class="icon" width="16" height="16"><use href="#icon-youtube"></use></svg></a></li>
+                    <li class="linkedin"><a href="#" title="Linkedin" target="_blank"><svg class="icon" width="16" height="16"><use href="#icon-linkedin"></use></svg></a></li>
+                </ul>
+            </div>
+            <div id="topSearch">
+                <form method="get" action="search.html">
+                    <svg class="icon" width="16" height="16"><use href="#icon-search"></use></svg>
+                    <input type="text" name="s" placeholder="Arama yap..." />
+                    <button type="submit">ARA</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header>
+    <div id="header">
+        <div class="innerContainer">
+            <div id="logo">
+                <h1><a href="index.html" style="color: #667eea; text-decoration: none; font-weight: bold;">SAFIR PUSULA</a></h1>
+            </div>
+            <div id="menuGroup">
+                <div id="menu">
+                    <ul style="list-style: none; display: flex; gap: 30px; margin: 0; padding: 0;">
+                        <li style="margin: 0;"><a href="index.html" style="text-decoration: none; color: #667eea; font-weight: 600;">Ana Sayfa</a></li>
+                        <li style="margin: 0;"><a href="#hakkimizda" style="text-decoration: none; color: #333;">Hakkımızda</a></li>
+                        <li style="margin: 0;"><a href="#hizmetler" style="text-decoration: none; color: #333;">Hizmetler</a></li>
+                        <li style="margin: 0;"><a href="#urunler" style="text-decoration: none; color: #333;">Ürünler</a></li>
+                        <li style="margin: 0;"><a href="category.html" style="text-decoration: none; color: #333;">Blog</a></li>
+                        <li style="margin: 0;"><a href="contact.html" style="text-decoration: none; color: #333;">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="demo-hero">
+    <div class="innerContainer">
+        <h1>SAFIR PUSULA</h1>
+        <p>Modern, Profesyonel ve Lisanssız HTML Tema</p>
+        <p style="margin-top: 30px;">
+            <a href="contact.html" style="background: white; color: #667eea; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block;">
+                İletişime Geç
+            </a>
+        </p>
+    </div>
+</section>
+
+<!-- Main Content -->
+<main>
+    <!-- Hakkımızda Bölümü -->
+    <section id="hakkimizda" class="demo-section" style="background: #f8f9fa;">
+        <div class="innerContainer">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #333;">Hakkımızda</h2>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>Misyonumuz</h3>
+                    <p>Müşterilerimize en kaliteli ve modern web çözümlerini sunmak, işlerini dijital dünyada büyütmelerine yardımcı olmak.</p>
+                </div>
+                <div class="demo-card">
+                    <h3>Vizyonumuz</h3>
+                    <p>Türkiye'nin en güvenilir ve yenilikçi web çözümleri sağlayıcısı olmak, sektörde öncü rol üstlenmek.</p>
+                </div>
+                <div class="demo-card">
+                    <h3>Değerlerimiz</h3>
+                    <p>Müşteri memnuniyeti, kalite, yenilikçilik ve sürekli gelişim ilkelerimizle hareket ediyoruz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hizmetler Bölümü -->
+    <section id="hizmetler" class="demo-section">
+        <div class="innerContainer">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #333;">Hizmetlerimiz</h2>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <h3>🎨 Web Tasarım</h3>
+                    <p>Modern, kullanıcı dostu ve mobil uyumlu web siteleri tasarlıyoruz. Her projeyi özenle hazırlıyoruz.</p>
+                </div>
+                <div class="demo-card">
+                    <h3>💻 Web Geliştirme</h3>
+                    <p>En son teknolojilerle güvenli, hızlı ve ölçeklenebilir web uygulamaları geliştiriyoruz.</p>
+                </div>
+                <div class="demo-card">
+                    <h3>🚀 SEO Optimizasyonu</h3>
+                    <p>Web sitenizin arama motorlarında üst sıralarda yer alması için SEO çalışmaları yapıyoruz.</p>
+                </div>
+                <div class="demo-card">
+                    <h3>📱 Mobil Uygulama</h3>
+                    <p>iOS ve Android platformları için performanslı mobil uygulamalar geliştiriyoruz.</p>
+                </div>
+                <div class="demo-card">
+                    <h3>🛒 E-Ticaret</h3>
+                    <p>Güvenli ve kullanıcı dostu e-ticaret siteleri ile satışlarınızı artırın.</p>
+                </div>
+                <div class="demo-card">
+                    <h3>📊 Dijital Pazarlama</h3>
+                    <p>Sosyal medya, Google Ads ve içerik pazarlama ile markanızı büyütün.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ürünler Bölümü -->
+    <section id="urunler" class="demo-section" style="background: #f8f9fa;">
+        <div class="innerContainer">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #333;">Ürünlerimiz</h2>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/300x200/667eea/ffffff?text=Urun+1" alt="Ürün 1" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                    <h3>Premium WordPress Teması</h3>
+                    <p>Modern ve profesyonel WordPress teması. Kolay kurulum ve özelleştirme.</p>
+                    <p style="margin-top: 15px;">
+                        <a href="#" style="color: #667eea; text-decoration: none; font-weight: 600;">Detaylı Bilgi →</a>
+                    </p>
+                </div>
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/300x200/764ba2/ffffff?text=Urun+2" alt="Ürün 2" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                    <h3>E-Ticaret Paketi</h3>
+                    <p>Hazır e-ticaret çözümü. Ödeme sistemleri entegre, SEO uyumlu.</p>
+                    <p style="margin-top: 15px;">
+                        <a href="#" style="color: #667eea; text-decoration: none; font-weight: 600;">Detaylı Bilgi →</a>
+                    </p>
+                </div>
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/300x200/667eea/ffffff?text=Urun+3" alt="Ürün 3" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                    <h3>Kurumsal Web Paketi</h3>
+                    <p>Kurumsal firmalara özel profesyonel web sitesi çözümü.</p>
+                    <p style="margin-top: 15px;">
+                        <a href="#" style="color: #667eea; text-decoration: none; font-weight: 600;">Detaylı Bilgi →</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Önizleme -->
+    <section class="demo-section">
+        <div class="innerContainer">
+            <h2 style="text-align: center; font-size: 36px; margin-bottom: 40px; color: #333;">Son Yazılar</h2>
+            <div class="demo-grid">
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/300x180/667eea/ffffff?text=Blog+1" alt="Blog 1" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                    <small style="color: #999;">15 Kasım 2025</small>
+                    <h3 style="margin-top: 10px;">Web Tasarımında 2025 Trendleri</h3>
+                    <p>2025 yılında web tasarımında öne çıkacak trendleri ve yenilikleri keşfedin...</p>
+                    <p style="margin-top: 15px;">
+                        <a href="single.html" style="color: #667eea; text-decoration: none; font-weight: 600;">Devamını Oku →</a>
+                    </p>
+                </div>
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/300x180/764ba2/ffffff?text=Blog+2" alt="Blog 2" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                    <small style="color: #999;">10 Kasım 2025</small>
+                    <h3 style="margin-top: 10px;">SEO Optimizasyonu Nasıl Yapılır?</h3>
+                    <p>Web sitenizi Google'da üst sıralara taşıyacak SEO ipuçları...</p>
+                    <p style="margin-top: 15px;">
+                        <a href="single.html" style="color: #667eea; text-decoration: none; font-weight: 600;">Devamını Oku →</a>
+                    </p>
+                </div>
+                <div class="demo-card">
+                    <img src="https://via.placeholder.com/300x180/667eea/ffffff?text=Blog+3" alt="Blog 3" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                    <small style="color: #999;">5 Kasım 2025</small>
+                    <h3 style="margin-top: 10px;">Responsive Tasarımın Önemi</h3>
+                    <p>Mobil uyumlu web siteleri neden bu kadar önemli? Detayları öğrenin...</p>
+                    <p style="margin-top: 15px;">
+                        <a href="single.html" style="color: #667eea; text-decoration: none; font-weight: 600;">Devamını Oku →</a>
+                    </p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 40px;">
+                <a href="category.html" style="background: #667eea; color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; display: inline-block;">
+                    Tüm Yazılar
+                </a>
+            </p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="innerContainer" style="padding: 60px 20px;">
+        <div class="footerCols" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px;">
+            <div class="about col">
+                <div class="title" style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">
+                    Hakkımızda
+                </div>
+                <div class="desc">
+                    <p style="color: #666; line-height: 1.6;">Safir Pusula, modern ve profesyonel web çözümleri sunan bir temadır.
+                    Müşteri memnuniyeti odaklı çalışarak, en iyi hizmeti sunmayı hedefliyoruz.</p>
+                </div>
+            </div>
+            <div class="menu col">
+                <div class="title" style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">
+                    Menü
+                </div>
+                <nav>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: #666; text-decoration: none;">Ana Sayfa</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#hakkimizda" style="color: #666; text-decoration: none;">Hakkımızda</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#hizmetler" style="color: #666; text-decoration: none;">Hizmetler</a></li>
+                        <li style="margin-bottom: 10px;"><a href="category.html" style="color: #666; text-decoration: none;">Blog</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact.html" style="color: #666; text-decoration: none;">İletişim</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="contact col">
+                <div class="title" style="font-size: 20px; font-weight: 600; margin-bottom: 15px; color: #333;">
+                    İletişim
+                </div>
+                <div class="infoBlock">
+                    <div style="margin-bottom: 10px; color: #666;">
+                        📍 Örnek Mahalle, Örnek Sokak No:1, İstanbul / Türkiye
+                    </div>
+                    <div style="margin-bottom: 10px; color: #666;">
+                        ✉️ info@example.com
+                    </div>
+                    <div style="margin-bottom: 10px; color: #666;">
+                        📞 +90 123 456 7890
+                    </div>
+                </div>
+                <div id="footerSocial" style="margin-top: 20px;">
+                    <a href="#" style="display: inline-block; margin-right: 10px; color: #667eea;">Facebook</a>
+                    <a href="#" style="display: inline-block; margin-right: 10px; color: #667eea;">Twitter</a>
+                    <a href="#" style="display: inline-block; margin-right: 10px; color: #667eea;">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerBottom" style="background: #333; color: white; padding: 20px; text-align: center;">
+        <div class="innerContainer">
+            <div class="copyright">
+                © 2025 Safir Pusula. Tüm hakları saklıdır. | HTML Version - License Free
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <a href="https://wa.me/901234567890" target="_blank" style="background: #25d366; color: white; padding: 15px 20px; border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.2);">
+        <span style="font-size: 24px;">📱</span>
+        <span>WhatsApp</span>
+    </a>
+</div>
+
+<!-- SVG Icons (Simplified) -->
+<svg style="display:none;">
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.27-.27.35-.66.24-1.02C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+    </symbol>
+    <symbol id="icon-email" viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+        <path d="M18 2h-3c-1.85 0-3 1.15-3 3v3H9v4h3v8h4v-8h3l1-4h-4V5c0-.55.45-1 1-1h3V2z"/>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 24 24">
+        <path d="M22.46 6c-.85.38-1.78.64-2.75.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.96.95-3.06 1.17-.88-.94-2.13-1.53-3.52-1.53-2.67 0-4.83 2.16-4.83 4.83 0 .38.04.75.13 1.1-4.02-.2-7.58-2.13-9.97-5.04-.42.72-.66 1.55-.66 2.44 0 1.68.85 3.16 2.15 4.03-.79-.02-1.54-.24-2.19-.6v.06c0 2.34 1.67 4.29 3.88 4.74-.41.11-.84.17-1.28.17-.31 0-.62-.03-.92-.08.62 1.94 2.42 3.35 4.55 3.39-1.67 1.31-3.77 2.09-6.05 2.09-.39 0-.78-.02-1.17-.07 2.16 1.39 4.73 2.2 7.49 2.2 8.98 0 13.89-7.44 13.89-13.89 0-.21 0-.42-.01-.63.95-.69 1.78-1.55 2.43-2.53z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2m-.2 2C5.6 4 4 5.6 4 7.6v8.8C4 18.4 5.6 20 7.6 20h8.8c2 0 3.6-1.6 3.6-3.6V7.6C20 5.6 18.4 4 16.4 4H7.6m9.65 1.5c.66 0 1.2.54 1.2 1.2s-.54 1.2-1.2 1.2-1.2-.54-1.2-1.2.54-1.2 1.2-1.2M12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5m0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+    </symbol>
+    <symbol id="icon-youtube" viewBox="0 0 24 24">
+        <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+    </symbol>
+</svg>
+
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/lib/owl-carousel/owl.carousel.min.js"></script>
+<script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
