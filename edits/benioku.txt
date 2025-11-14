@@ -1,0 +1,11 @@
+Bu klasör, temada yapmak isteyebileceğiniz düzenlemeler, tema güncellemelerinde kaybolmasın diye oluşturulmuştur. Bu klasör sayesinde 3 tipte dosya üzerinden editleme/ekleme yapabilirsiniz:
+
+1) style.css -> edits klasörü içine bu isimdeki dosyayı oluşturduğunuzda, özel CSS kodlarınızı bu dosyadan ekleyebilirsiniz.
+2) scripts.js -> edits klasörü içine bu isimdeki dosyayı oluşturduğunuzda, özel Javascript veya Jquery kodlarınızı bu dosyadan ekleyebilirsiniz.
+3) functions.php -> edits klasörü içine bu isimdeki dosyayı oluşturduğunuzda, özel Wordpress fonksiyon kodlarınızı bu dosyadan ekleyebilirsiniz.
+
+Bu 3 dosya eğer oluşturulmuşsa sisteme dahil edilecektir ve tema güncellemelerinde bu dosyalar yenilenmeyecektir. Dosyaların sisteme dahil edilebilmesi için birebir aynı isimle oluşturulması gerekmektedir.
+
+Bu 3 dosya dışındaki dosyalarda yapacağınız düzenlemeler tema güncellemelerinde yenileneceği için o dosyaları güncelleme öncesi yedeklemelisiniz.
+
+safirtema.com

@@ -1,0 +1,6 @@
+<?php if(!defined('ABSPATH')) exit; ?>
+<?php
+define('SAFIR_CACHE_ENABLED', TRUE);
+define('SAFIR_CACHE_TIME', DAY_IN_SECONDS);
+define('SAFIR_MENU_CACHE_TIME', WEEK_IN_SECONDS);
+define('SAFIR_WIDGET_CACHE_TIME', WEEK_IN_SECONDS);

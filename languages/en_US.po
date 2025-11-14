@@ -1,0 +1,293 @@
+# WordPress Blank Pot
+# Copyright (C) 2014 ...
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pusula\n"
+"Report-Msgid-Bugs-To: Safir Tema <safirtema@gmail.com>\n"
+"POT-Creation-Date: 2017-05-03 09:37-0800\n"
+"PO-Revision-Date: 2023-12-07 06:45+0000\n"
+"Last-Translator: \n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Textdomain-Support: yesX-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;esc_html_e;esc_html_x:1,2c;esc_html__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:"
+"1,2c;_n:1,2;_n_noop:1,2;__ngettext:1,2;__ngettext_noop:1,2;_c,_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: header.php\n"
+
+#: lib/safirtema/metabox.php:38
+msgid "% yorum"
+msgstr "% comments"
+
+#: parts/picheader.php:47
+#, php-format
+msgid "%s ile Etiketlenen Konular"
+msgstr "Posts Tagged with %s"
+
+#: comments.php:14
+#, php-format
+msgid "%s YORUM"
+msgid_plural "%s YORUM"
+msgstr[0] "%s COMMENT"
+msgstr[1] "%s COMMENTS"
+
+#: lib/safirtema/metabox.php:38
+msgid "1 yorum"
+msgstr "1 comment"
+
+#: pages/page-contact.php:48
+msgid "ADRES"
+msgstr "ADDRESS"
+
+#: lib/functions/breadcrumbs.php:4
+msgid "Anasayfa"
+msgstr "Home"
+
+#: parts/topbar.php:27
+msgid "ARA"
+msgstr "SEARCH"
+
+#: 404.php:6
+msgid ""
+"Aradığınız sayfa bulunamadı. Sayfa yayından kaldırılmış veya adresi yanlış "
+"yazmış olabilirsiniz. Lütfen arama fonksiyonunu kullanın"
+msgstr ""
+"The page you are looking for is not found. Page might be removed or you "
+"mistyped the address. Please use search bar"
+
+#: lib/functions/breadcrumbs.php:6
+msgid "Arama"
+msgstr "Search"
+
+#: parts/picheader.php:45
+msgid "Arama Sonuçları"
+msgstr "Search Results"
+
+#: parts/topbar.php:26
+msgid "Arama yap..."
+msgstr "Search..."
+
+#: single.php:8
+#| msgid "BENZER KONULAR"
+msgid "Benzer Konular"
+msgstr "Related Posts"
+
+#: single.php:13
+#| msgid "BENZER ÜRÜNLER"
+msgid "Benzer Ürünler"
+msgstr "Related Products"
+
+#: comments.php:58
+msgid "Bu konu hakkındaki görüşünüzü belirtmek ister misiniz?"
+msgstr "Do you want to comment on this subject?"
+
+#: sidebar.php:9
+msgid "Bu tema bileşen (widget) desteklidir"
+msgstr "This theme has widget support"
+
+#: comments.php:7
+msgid "Bu yazı şifre korumalıdır!"
+msgstr "This post is password protected!"
+
+#: sidebar.php:10
+msgid "Buraya tıklayarak bileşen ekleyebilirsiniz"
+msgstr "You can click here to add widgets"
+
+#: comments.php:57
+msgid "BİR YORUM YAZIN"
+msgstr "MAKE A COMMENT"
+
+#: comments.php:18
+msgid "CEVAPLA"
+msgstr "REPLY"
+
+#. Name of the template
+msgid "Ekibimiz"
+msgstr "Crew"
+
+#: lib/functions/breadcrumbs.php:7
+msgid "Etiketi"
+msgstr "Tag"
+
+#: lib/safirtema/tagshare.php:6
+msgid "ETİKETLER"
+msgstr "TAGS"
+
+#: pages/page-contact.php:22
+msgid "FAKS NUMARASI"
+msgstr "FAX"
+
+#: attachment.php:39
+msgid "Fotoğraf"
+msgstr "Photo"
+
+#: pages/page-contact.php:19
+msgid "FİRMA ÜNVANI"
+msgstr "COMPANY TITLE"
+
+#: widgets/referencesWidget.php:22
+msgid "Galeri"
+msgstr "Gallery"
+
+#: comments.php:47
+msgid "GÖNDER"
+msgstr "SEND"
+
+#: pages/page-contact.php:74
+msgid "HARİTA ÜZERİNDE YERİMİZ"
+msgstr "OUR LOCATION"
+
+#: comments.php:28
+msgid ""
+"Henüz yorum yapılmamış. İlk yorumu aşağıdaki form aracılığıyla siz "
+"yapabilirsiniz"
+msgstr "No comments yet. You can be the first filling the form below"
+
+#. Description of the theme
+#. URI of the theme
+msgid "https://safirdemo.com/pusula"
+msgstr "https://safirdemo.com/pusula"
+
+#. Author URI of the theme
+msgid "https://safirtema.com"
+msgstr "https://safirtema.com"
+
+#: lib/safirtema/metabox.php:28
+msgid "kez görüntülendi"
+msgstr "views"
+
+#: attachment.php:65
+msgid "Klavye yön tuşlarını kullanarak resimler arasında geçiş yapabilirsiniz"
+msgstr "You can navigate between images with keyboard arrow keys"
+
+#: attachment.php:66
+msgid "Konuya Geri Dön"
+msgstr "Back to Post"
+
+#: lib/safirtema/tagshare.php:13
+msgid "Konuyu Facebook'ta Paylaş"
+msgstr "Share this on Facebook"
+
+#: lib/safirtema/tagshare.php:16
+msgid "Konuyu Twitter'ta Paylaş"
+msgstr "Share this on Facebook"
+
+#: lib/safirtema/tagshare.php:19
+msgid "Konuyu Whatsapp'ta Paylaş"
+msgstr "Share on Whatsapp"
+
+#: comments.php:34
+msgid "Mail adresiniz"
+msgstr "Email address"
+
+#: pages/page-contact.php:20
+msgid "MAİL ADRESİ"
+msgstr "EMAIL ADDRESS"
+
+#. Name of the template
+msgid "Referanslar"
+msgstr "References"
+
+#. Name of the theme
+msgid "Safir Pusula Wordpress Teması"
+msgstr "Safir Pusula Wordpress Theme"
+
+#. Author of the theme
+msgid "Safir Tema"
+msgstr "Safir Tema"
+
+#: lib/functions/breadcrumbs.php:112
+msgid "Sayfa"
+msgstr "Page"
+
+#: parts/picheader.php:43 lib/functions/breadcrumbs.php:9
+msgid "Sayfa Bulunamadı"
+msgstr "Not Found"
+
+#: lib/safirtema/social.php:11
+#, php-format
+msgid "Sitemizi %s üzerinden takip edin"
+msgstr "Follow us on %s"
+
+#: attachment.php:40
+msgid "Sonraki"
+msgstr "Next"
+
+#: header.php:20
+msgid "Sosyal Medya Hesaplarımız"
+msgstr "Our Social Accounts"
+
+#. Name of the template
+msgid "Tam Sayfa"
+msgstr "Full Page"
+
+#: pages/page-contact.php:21
+msgid "TELEFON NUMARASI"
+msgstr "PHONE"
+
+#: lib/functions/breadcrumbs.php:8
+msgid "Yazar"
+msgstr "Author"
+
+#: lib/safirtema/metabox.php:38
+msgid "Yorum yok"
+msgstr "No comment"
+
+#: comments.php:46
+msgid "Yoruma cevap yazmaktan vazgeç"
+msgstr "Cancel replying"
+
+#: comments.php:45
+msgid "Yorumu Cevapla"
+msgstr "Reply Comment"
+
+#: comments.php:43
+msgid "Yorumunuz"
+msgstr "Your comment"
+
+#: comments.php:25
+msgid "Ziyaretçilerimiz tarafından yapılan yorumlar"
+msgstr "Comments of our visitors"
+
+#: comments.php:14 comments.php:24
+msgid "ZİYARETÇİ YORUMLARI"
+msgstr "COMMENTS"
+
+#: attachment.php:38
+msgid "Önceki"
+msgstr "Previous"
+
+#. Name of the template
+#: lib/safirtema/activate.php:9
+msgid "İletişim"
+msgstr "Contact"
+
+#: pages/page-contact.php:66
+msgid "İLETİŞİM FORMU"
+msgstr "CONTACT FORM"
+
+#: single.php:9
+msgid "İlginizi çekebilecek diğer konular"
+msgstr "Other posts you may be interested in"
+
+#: single.php:14
+#| msgid "İlginizi çekebilecek diğer ürünlerimiz"
+msgid "İlginizi çekebilecek diğer ürünler"
+msgstr "Other products you may be interested in"
+
+#: comments.php:33
+msgid "İsminiz"
+msgstr "Name"
+
+#: list.php:14 list.php:29
+msgid "İçerik bulunamadı"
+msgstr "No posts found"

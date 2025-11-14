@@ -1,0 +1,595 @@
+/* GENERAL */
+
+#safirpanel {
+	max-width: 820px;
+	overflow: hidden;
+}
+
+#safirpanel a {
+	text-decoration: none;
+}
+
+/* TOP */
+
+#safirpanel #top {
+	overflow: hidden;
+}
+
+/* LOGO */
+
+#safirpanel #top .logo {
+	width: 220px;
+	float: left;
+	height: 70px;
+	text-align: center;
+	background: #18947c;
+}
+
+/* HEADING */
+
+#safirpanel #top #heading {
+	height: 30px;
+	background: #1ca78c;
+	padding: 20px;
+	line-height: 30px;
+	position: relative;
+	width: 600px;
+	float: right;
+}
+
+#safirpanel #top #heading .arrow {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 0 8px 8px;
+	border-color: transparent transparent transparent #18947c;
+	position: absolute;
+	top: 27px;
+	left: 35px;
+}
+
+#safirpanel #top #heading .title {
+	color: #fff;
+	font-size: 24px;
+	display: none;
+}
+
+#safirpanel #top #heading .help {
+	display: block;
+	line-height: 24px;
+	position: absolute;
+	right: 23px;
+	top: 23px;
+	color: #fff;
+	font-weight: bold;
+	display: flex;
+}
+
+#safirpanel #top #heading .help:before {
+	display: block;
+	margin-right: 5px;
+	line-height: 24px;
+	font-size: 20px;
+	font-family: safiradmin;
+	content: "\E002";
+}
+
+#safirpanel #top #heading .help:hover {
+	color: #ddd;
+}
+
+/* LEFT SIDE */
+
+#safirpanel #safirpanelmain {
+	overflow: hidden;
+}
+
+#safirpanel #safirpanelleft {
+	width: 220px;
+	float: left;
+}
+
+
+#safirpanel #safirpanelleft .safirmenu {
+	background: #34495e;
+	list-style: none;
+	margin: 0;
+}
+
+#safirpanel #safirpanelleft .safirmenu a {
+	display: block;
+	cursor: pointer;
+	line-height: 56px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-size: 14px;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	transition:all .3s;
+}
+
+#safirpanel #safirpanelleft .safirmenu a:focus, #safirpanel #safirpanelleft .safirmenu a:active {
+	box-shadow: none;
+	outline: 0;
+}
+
+#safirpanel #safirpanelleft .safirmenu li {
+	margin: 0;
+}
+
+#safirpanel #safirpanelleft .safirmenu li:first-child a {
+	border-top: 0;
+}
+
+#safirpanel #safirpanelleft .safirmenu li.active a {
+	background-color: rgba(0,0,0,0.2);
+}
+
+#safirpanel #safirpanelleft .safirmenu a:hover {
+	background-color: rgba(0,0,0,0.1);
+}
+
+#safirpanel #safirpanelleft .safirmenu a .icon {
+	float: left;
+	display: block;
+	margin: 18px 10px 18px 15px;
+}
+
+#safirpanel #safirpanelleft .safirmenu a .icon:before {
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	display: block;
+	font-family: "safiradmin";
+	content: "\E00F";
+
+}
+
+#safirpanel #safirpanelleft .safirmenu a.user .icon:before {
+	content: "\E008";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.ads .icon:before {
+	content: "\E009";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.category .icon:before {
+	content: "\E00C";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.social .icon:before {
+	content: "\E019";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.script .icon:before {
+	content: "\E007";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.image .icon:before {
+	content: "\E014";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.single .icon:before {
+	content: "\E01C";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.footer .icon:before {
+	content: "\E006";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.contact .icon:before {
+	content: "\E018";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.breaking .icon:before {
+	content: "\E00A";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.whatsapp .icon:before {
+	content: "\E004";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.maintenance .icon:before {
+	content: "\E017";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.color .icon:before {
+	content: "\E011";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.slider .icon:before {
+	content: "\E00E";
+}
+
+#safirpanel #safirpanelleft .safirmenu a.importexport .icon:before {
+	content: "\E01F";
+	font-size: 24px;
+}
+
+/* RIGHT SIDE */
+
+#safirpanel #safirpanelright {
+	width: 600px;
+	float: right;
+}
+
+#safirpanel .updated {
+	margin-bottom: 10px;
+}
+
+#safirpanel .updated p a {
+	float: right;
+}
+
+p, input, select, textarea, label {
+	font-size: 14px;
+}
+
+#sections {
+	background: #f8f8f8;
+	min-height: 398px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+#safirpanel .section {
+	padding: 20px;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+#safirpanel .section .seperator {
+	margin: 15px 0;
+	height: 2px;
+	background: #e8e8e8;
+}
+
+#safirpanel .section .safirpanelItem+.seperator {
+	margin:0 0 15px 0;
+}
+
+#safirpanel .section .safirpanelItem.tight+.seperator {
+	margin:15px 0 15px 0;
+}
+
+#safirpanel .section h3.heading {
+	margin: 40px 0 15px;
+	padding: 12px 8px;
+	background: #eee;
+	border-left: 3px solid #cdcdcd;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+#safirpanel .section h4.heading {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+#safirpanel .section .clear {
+	clear: both;
+}
+
+#safirpanel .section .safirpanelItem {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+#safirpanel .section .safirpanelItem.aligntop {
+	align-items: inherit;
+}
+
+#safirpanel .section .safirpanelItem.aligntop .desc {
+	padding-top: 10px;
+}
+
+#safirpanel .section .safirpanelItem.aligntop.color .desc {
+	padding-top: 0;
+}
+
+#safirpanel .section .safirpanelItem.tight {
+	margin-bottom: 5px;
+}
+
+#safirpanel .section .safirpanelItem .desc {
+	float: left;
+	width: calc(40%);
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+
+#safirpanel .section .safirpanelItem .desc .title {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+#safirpanel .section .safirpanelItem .desc .info {
+	margin-top: 5px;
+	font-size: 12px;
+	line-height: 1.4;
+	color: #666;
+}
+
+#safirpanel .section .safirpanelItem.checkbox .info {
+	font-size: 11px;
+	color: #999;
+}
+
+#safirpanel .section .safirpanelItem .formitem {
+	float: right;
+	width: 60%;
+	align-self: baseline;
+}
+
+#safirpanel .section .safirpanelItem .formitem.full {
+	float: none;
+	width: 100%;
+}
+
+#safirpanel .section .safirpanelItem.icon input {
+	margin-left: 44px;
+	width: calc(100% - 44px);
+}
+
+#safirpanel .section .safirpanelItem.icon .safirAdminIconSelector {
+	border: 0 !important;
+}
+
+#safirpanel .section .safirpanelItem.icon .iconSelected {
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 2px solid #e8e8e8;
+	border-right: 0;
+}
+
+#safirpanel .section .safirpanelItem.icon .iconSelected svg {
+	width: 22px;
+	height: 22px;
+	margin: 9px 10px;
+}
+
+#safirpanel .section .safirpanelItem.checkboxlist .info {
+	font-size: 13px;
+	color: #999;
+}
+
+#safirpanel .section .safirpanelItem.checkboxlist .selectButtons span {
+	font-size: 11px;
+	font-weight: bold;
+	color: #18947C;
+	cursor: pointer;
+}
+
+#safirpanel .section .safirpanelItem.checkboxlist .selectButtons span:hover {
+	color: #34495e;
+}
+
+#safirpanel .section .safirpanelItem.checkboxlist .items {
+	max-height: 160px;
+	overflow-y: scroll;
+	background: #fff;
+	border: 2px solid #e8e8e8;
+	box-sizing: border-box;
+}
+
+#safirpanel .section .safirpanelItem.checkboxlist .items .children {
+	margin: 0 0 0 15px;
+}
+
+#safirpanel .section .safirpanelItem.checkboxlist .items li {
+	list-style: none;
+	margin: 10px;
+}
+
+#safirpanel .section .safirpanelItem.checkboxlist .item {
+	padding: 5px;
+	height: 30px;
+	box-sizing: border-box;
+}
+
+#safirpanel .section .safirpanelItem .switch {
+	position: relative;
+	display: block;
+	padding: 5px 0 5px 45px;
+	line-height: 20px;
+}
+
+#safirpanel .section .safirpanelItem .switch input {
+	display: none;
+}
+
+#safirpanel .section .safirpanelItem .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 5px;
+	left: 0;
+	width: 40px;
+	height: 20px;
+	background-color: #ccc;
+	border-radius: 10px;
+	transition: .4s;
+}
+
+#safirpanel .section .safirpanelItem .slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+#safirpanel .section .safirpanelItem input:checked + .slider {
+	background-color: #005ae0;
+}
+
+#safirpanel .section .safirpanelItem input:focus + .slider {
+	box-shadow: 0 0 1px #005ae0;
+}
+
+#safirpanel .section .safirpanelItem input:checked + .slider:before {
+	-webkit-transform: translateX(19px);
+	-ms-transform: translateX(19px);
+	transform: translateX(19px);
+}
+
+#safirpanel .section .safirpanelItem.font .formitem {
+	position: relative;
+}
+
+#safirpanel .section .safirpanelItem.font .formitem .arrowSelector {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	background: #e8e8e8;
+	cursor: pointer;
+}
+
+#safirpanel .section .safirpanelItem.font .formitem .arrowSelector:before {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 11px;
+	text-align: center;
+	display: block;
+	font-family: "safiradmin";
+	content: "\E01E";
+	color: #666;
+}
+
+#safirpanel .section .safirpanelItem.font .formitem .arrowSelector.active:before {
+	font-size: 9px;
+	content: "\E01D";
+}
+
+#safirpanel .section .safirpanelItem.font .formitem:hover .arrowSelector:before {
+	color: #000;
+}
+
+#safirpanel .section .safirpanelItem.file .mediaButton {
+	padding: 0 5px;
+	margin: 3px 0 10px;
+	float: none;
+}
+
+#safirpanel .section .safirpanelItem.file .uploadImage {
+	display: block;
+	max-height: 200px;
+	background: #f9f9f9;
+	border: 2px solid #eee;
+	padding: 10px;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+#safirpanel .section input[type=text], #safirpanel .section input[type=file], #safirpanel .section input[type=password], #safirpanel .section select, #safirpanel .section textarea {
+	display: block;
+	width: 100%;
+	padding: 5px 10px;
+	border: 2px solid #e8e8e8;
+	border-radius: 0;
+	margin: 0;
+	line-height: 30px;
+}
+
+#safirpanel .section input[type=text]:focus, #safirpanel .section input[type=file], #safirpanel .section select:focus, #safirpanel .section textarea:focus {
+	border-color: #d7d7d7;
+	box-shadow: none !important;
+}
+
+#safirpanel .section input[type=text].minicolors-input {
+	padding-left: 30px;
+}
+
+#safirpanel .minicolors-theme-default .minicolors-swatch {
+	top: 9px;
+	left: 9px;
+}
+
+#safirpanel .section textarea {
+	height: 160px;
+	width: 100%;
+	line-height: 20px;
+}
+
+#safirpanel .section p {
+	margin: 0;
+}
+
+#safirpanel .section p.desc {
+	font-style: italic;
+	margin-bottom: 20px;
+}
+
+#safirpanel p.submit {
+	margin: 0 0 0 20px;
+}
+
+#safirpanel .infoBox {
+	background: rgba(255,255,255,.85);
+	margin-bottom: 15px;
+	border-left: 5px solid #7AD03A;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	padding: 10px;
+}
+
+#safirpanel .section .safirpanelItem.codeeditor .CodeMirror {
+	height: 160px;
+}
+
+#safirpanel .section .safirpanelItem.codeeditor .CodeMirror-gutters {
+	background: #f0f0f0;
+}
+
+#safirpanel .section .safirpanelItem.codeeditor .desc {
+	width: 100%;
+	padding-top: 0;
+	margin-bottom: 10px;
+}
+
+#safirpanel .section .safirpanelItem.codeeditor .formitem {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.safirFontSelector {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	position: relative;
+	border: 1px solid #ededed;
+	border-top: 0;
+}
+
+.safirFontSelector .item {
+	width: 50%;
+	cursor: pointer;
+	border: 1px solid #ededed;
+	box-sizing: border-box;
+	padding: 15px 0;
+	font-size: 18px;
+	background: #fff;
+}
+
+.safirFontSelector .item.active {
+	background: #ededed;
+}
+
+/* Color Picker */
+
+#safirpanel .section input.wp-color-picker {
+	width: 80px;
+	padding: 0 10px;
+	border: 1px solid #e8e8e8;
+}
+
+/* Responsive */
+
+#safirpanel .section .safirpanelItem {flex-wrap: wrap} #safirpanel { width: auto; max-width: 820px; } #safirpanel #top #heading { width: auto; margin-left: 220px; float: none; } #safirpanel #safirpanelright { width: auto; float: none; margin-left: 220px; } @media all and (max-width:600px) { #safirpanel #top .logo, #safirpanel #safirpanelleft { width: 100%; float: none; } #safirpanel #top #heading, #safirpanel #safirpanelright { margin-left: 0; } #safirpanel #top #heading .arrow { display: none; } #safirpanel .section .safirpanelItem .desc { float: none; width: 100%; margin-bottom: 10px; } #safirpanel .section .safirpanelItem .formitem { float: none; width: 100%; } #safirpanel .section { padding: 10px; } #safirpanel p.submit { margin: 0 10px 10px; } }

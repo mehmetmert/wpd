@@ -1,0 +1,282 @@
+/* Fonts */
+
+	@font-face {
+		font-family: "safiradmin";
+		src:url("fonts.v2/safiradmin.eot");
+		src:url("fonts.v2/safiradmin.eot?#iefix") format("embedded-opentype"),
+		url("fonts.v2/safiradmin.woff") format("woff"),
+		url("fonts.v2/safiradmin.ttf") format("truetype"),
+		url("fonts.v2/safiradmin.svg#safiradmin") format("svg");
+		font-weight: normal;
+		font-style: normal;
+	}
+
+/* Icon Selector */
+
+	.safiricon svg {
+		display: block;
+		width: 20px;
+		height: 20px;
+		fill: currentColor;
+	}
+
+	.safirAdminIconSelector {
+		position: relative;
+	}
+
+	.safirAdminIconSelector .iconSelected {
+		position: absolute;
+		left: 0;
+		top: 0;
+		border: 2px solid #e8e8e8;
+		border-right: 0;
+	}
+
+	.safirAdminIconSelector .iconSelected svg {
+		width: 22px;
+		height: 22px;
+		margin: 9px 10px;
+	}
+
+	.safirAdminIconSelector input.iconInput {
+		border: 2px solid #e8e8e8;
+		border-radius: 0;
+		height: 44px;
+		margin-left: 44px !important;
+		width: calc(100% - 44px) !important;
+		outline: 0 !important;
+		box-shadow: none !important;
+	}
+
+	.safirAdminIconSelector .iconList {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		border-top: 1px solid #ededed;
+		border-left: 1px solid #ededed;
+		font-size: 11px;
+		position: relative;
+	}
+
+	.safirAdminIconSelector .iconList .close {
+		position: absolute;
+		top: 0;
+		right: -16px;
+		width: 16px;
+		height: 16px;
+		color: #fff;
+		background: #000;
+		cursor: pointer;
+		font-size: 9px;
+		line-height: 16px;
+		text-align: center;
+	}
+
+	.safirAdminIconSelector .iconList .item {
+		width: 20%;
+		cursor: pointer;
+		display: block;
+	}
+
+	.safirAdminIconSelector .iconList .item.active {
+		background: #c0c0c0;
+	}
+
+	.safirAdminIconSelector .iconList .inner {
+		display: block;
+		border-right: 1px solid #ededed;
+		border-bottom: 1px solid #ededed;
+		cursor: pointer;
+	}
+
+	.safirAdminIconSelector .iconList .icon {
+		display: block;
+		padding: 15px 10px !important;
+		margin: 0 !important;
+		float: none;
+		width: auto;
+		height: auto;
+	}
+
+	.safirAdminIconSelector .iconList .icon svg {
+		display: block;
+		width: 22px;
+		height: 22px;
+		margin: auto;
+	}
+
+/* Gutenberg Icons */
+
+	.safirGutenbergIcons {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -5px;
+	}
+
+	.safirGutenbergIcons .icon {
+		padding: 5px;
+		width: 20%;
+		overflow: hidden;
+		margin: 0;
+		height: auto;
+		float: left;
+	}
+
+	.safirGutenbergIcons .icon .inner {
+		border-radius: 3px;
+		background: #f3f3f3;
+		padding: 10px 5px;
+	}
+
+	.safirGutenbergIcons .icon svg {
+		cursor: pointer;
+		width: 22px;
+		height: 22px;
+		transition: all .3s;
+		color: inherit;
+		margin: auto;
+	}
+
+	.safirGutenbergIcons .icon.active:before, .safirGutenbergIcons .icon:hover:before {
+		background: #e0e0e0;
+	}
+
+/* Menu Icon */
+
+	#adminmenu #toplevel_page_safirpanel.menu-icon-generic div.wp-menu-image:before {
+		font-family: "safiradmin";
+		content: "\E000";
+	}
+
+	#wp-admin-bar-safirpanel>.ab-item {
+		display: flex !important;
+		align-items: center;
+	}
+
+	#wp-admin-bar-safirpanel>.ab-item:before {
+		font-family: "safiradmin" !important;
+		content: "\E000";
+	}
+
+/* Admin Pages */
+
+	.safirAdminPage {
+		margin-left: -20px;
+	}
+
+	.safirAdminPage .safirHeader {
+		background: #fff;
+		padding: 30px 20px;
+		box-shadow: 0 0 6px rgba(0,0,0,0.1);
+	}
+
+	.safirAdminPage .safirHeader h1 {
+		margin: 0;
+	}
+
+	.safirAdminPage .safirInner {
+		padding: 10px 20px;
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	.safirAdminPage .safirInner ul {
+		list-style: disc;
+		list-style-position: inside;
+	}
+
+	.safirAdminPage .safirInner p {
+		font-size: 15px;
+	}
+
+/* Widget Box */
+
+	.safirWidgetBox {
+		border:1px solid #ededed;
+		background:#f9f9f9;
+		margin-bottom:10px;
+	}
+
+	.safirWidgetBox .title {
+		font-weight: bold;
+		cursor: pointer;
+		background: #f1f1f1;
+		padding: 0 10px;
+		line-height: 30px;
+		position: relative;
+	}
+
+	.safirWidgetBox .title:after {
+		content: "+";
+		position: absolute;
+		right: 0;
+		top: 0;
+		font-weight: bold;
+		font-size: 16px;
+		display: block;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		text-align: center;
+		background: rgba(0,0,0,0.05);
+	}
+
+	.safirWidgetBox.active .title:after {
+		content: "-";
+	}
+
+	.safirWidgetBox .data {
+		border-top: 1px solid #ededed;
+		padding: 0 10px;
+		display: none;
+	}
+
+/* Info Box */
+
+	.safirInfoBox {
+		background: #fafafa;
+	    margin: 15px 0;
+	    border-left: 5px solid #7AD03A;
+	    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+	    padding: 10px;
+	}
+
+/* Widget Categories */
+
+	.safirWidgetSelectBox {
+		height:123px;
+		overflow-y:scroll;
+		border:1px solid #e2e2e2;
+		padding:0 5px;
+		margin:-1em -1px 1em 1px;
+	}
+
+	.safirWidgetSelectBox .children {
+		margin: 0 0 0 15px;
+	}
+
+	.safirWidgetSelectBox li {
+		list-style: none;
+		margin: 10px;
+	}
+
+/* imageButtonContainer */
+
+	.imageButtonContainer input[type=text] {
+		width: calc(100% - 100px);
+	}
+	
+	.imageButtonContainer .mediaButton {
+		float: right;
+	}
+	
+	.imageButtonContainer img {
+		display: block;
+		margin-top: 10px;
+	}
+
+/* Slider Revolution */
+
+	[data-slug="slider-revolution"] + .plugin-update-tr {
+		display: none;
+	}

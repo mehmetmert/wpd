@@ -1,0 +1,6 @@
+Bu klasöre kullanmak istediğiniz diğer SVG uzantılı ikonları ekleyebilirsiniz. Dikkat etmeniz gereken noktalar:
+
+1) Aşırı çok sayıda dosya eklemeniz hıza olumsuz etki edebilir.
+2) Dosyalar tek renk olursa tasarıma daha uygun olur, karışık renkli dosyalar temadaki bazı alanlarda uyumsuz görünebilir, fakat uygun olabilecek bazı alanlar için kullanmanızda sakınca yok.
+3) Ekleyeceğiniz SVG dosyaları standartlara uygun dosyalar olmalıdır. SVG ikonlar için flaticon.com sitesini tavsiye edebiliriz.
+4) Aynı isimde bir ikon ekleyecekseniz sprite dosyasının güncellenmesi için klasör içine boş bir dosya veya klasör oluşturup silebilirsiniz. Yeni dosya eklemelerinde sprite dosyası otomatik olarak oluşacaktır.
