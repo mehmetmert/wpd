@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="İletişim - Safir Pusula">
+    <title>İletişim - Safir Pusula</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/lib/owl-carousel/owl.carousel.min.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="assets/lib/fancybox/jquery.fancybox.min.css">
+</head>
+<body>
+
+<!-- Topbar -->
+<div id="topbar">
+    <div class="innerContainer">
+        <div class="leftBlock">
+            <div class="item phone">
+                <svg class="icon"><use href="#icon-phone"></use></svg>
+                +90 123 456 7890
+            </div>
+            <div class="item email">
+                <svg class="icon"><use href="#icon-email"></use></svg>
+                info@example.com
+            </div>
+        </div>
+        <div class="rightBlock">
+            <div id="topSocial">
+                <ul class="safirSocial">
+                    <li class="facebook"><a href="#" title="Facebook" target="_blank"><svg class="icon"><use href="#icon-facebook"></use></svg></a></li>
+                    <li class="twitter"><a href="#" title="Twitter" target="_blank"><svg class="icon"><use href="#icon-twitter"></use></svg></a></li>
+                    <li class="instagram"><a href="#" title="Instagram" target="_blank"><svg class="icon"><use href="#icon-instagram"></use></svg></a></li>
+                    <li class="youtube"><a href="#" title="Youtube" target="_blank"><svg class="icon"><use href="#icon-youtube"></use></svg></a></li>
+                    <li class="linkedin"><a href="#" title="Linkedin" target="_blank"><svg class="icon"><use href="#icon-linkedin"></use></svg></a></li>
+                </ul>
+            </div>
+            <div id="topSearch">
+                <form method="get" action="search.html">
+                    <svg class="icon"><use href="#icon-search"></use></svg>
+                    <input type="text" name="s" placeholder="Arama yap..." />
+                    <button type="submit">ARA</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header>
+    <div id="header">
+        <div class="innerContainer">
+            <div id="logo">
+                <h1><a href="index.html">SAFIR PUSULA</a></h1>
+            </div>
+            <div id="menuGroup">
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="index.html#hakkimizda">Hakkımızda</a></li>
+                        <li><a href="index.html#hizmetler">Hizmetler</a></li>
+                        <li><a href="index.html#urunler">Ürünler</a></li>
+                        <li><a href="category.html">Blog</a></li>
+                        <li class="current-menu-item"><a href="contact.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mobileHeaderBlock">
+                <a href="tel:+901234567890" class="button phone">
+                    <svg class="icon"><use href="#icon-phone"></use></svg>
+                </a>
+                <a href="mailto:info@example.com" class="button email">
+                    <svg class="icon"><use href="#icon-email"></use></svg>
+                </a>
+                <span class="button social withClose">
+                    <svg class="icon"><use href="#icon-share"></use></svg>
+                    <svg class="icon"><use href="#icon-close"></use></svg>
+                </span>
+                <span class="button toggleMenu close withClose">
+                    <svg class="icon"><use href="#icon-list"></use></svg>
+                    <svg class="icon"><use href="#icon-close"></use></svg>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenuContainer">
+    <div class="topinfo"></div>
+    <div class="menuContainer"></div>
+</div>
+
+<!-- Mobile Social -->
+<div id="mobileSocialContainer">
+    <div class="title">Sosyal Medya Hesaplarımız</div>
+    <div class="icons"></div>
+</div>
+
+<!-- Page Header -->
+<div class="page-header" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 20px 60px; text-align: center; color: white;">
+    <div class="innerContainer" style="max-width: 1200px; margin: 0 auto;">
+        <h1 style="font-size: 48px; margin-bottom: 15px; font-weight: 700;">İletişim</h1>
+        <p style="font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+            Size nasıl yardımcı olabiliriz? Bizimle iletişime geçin.
+        </p>
+
+        <!-- Breadcrumb -->
+        <div class="breadcrumb" style="margin-top: 30px; font-size: 14px;">
+            <a href="index.html" style="color: white; text-decoration: none; opacity: 0.8;">Ana Sayfa</a>
+            <span style="margin: 0 8px; opacity: 0.6;">/</span>
+            <span style="opacity: 0.9;">İletişim</span>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<main id="mainContent">
+    <div class="innerContainer" style="max-width: 1200px; margin: 50px auto; padding: 0 20px;">
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px;">
+
+            <!-- Phone Card -->
+            <div style="background: white; padding: 40px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s;">
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <svg style="width: 36px; height: 36px; fill: white;"><use href="#icon-phone"></use></svg>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px; color: #333;">Telefon</h3>
+                <p style="color: #666; margin-bottom: 10px; line-height: 1.6;">Bizi arayabilirsiniz</p>
+                <a href="tel:+901234567890" style="color: #667eea; text-decoration: none; font-weight: 600; font-size: 18px;">+90 123 456 7890</a>
+            </div>
+
+            <!-- Email Card -->
+            <div style="background: white; padding: 40px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s;">
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <svg style="width: 36px; height: 36px; fill: white;"><use href="#icon-email"></use></svg>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px; color: #333;">E-posta</h3>
+                <p style="color: #666; margin-bottom: 10px; line-height: 1.6;">7/24 size dönüş yapıyoruz</p>
+                <a href="mailto:info@example.com" style="color: #667eea; text-decoration: none; font-weight: 600; font-size: 18px;">info@example.com</a>
+            </div>
+
+            <!-- Address Card -->
+            <div style="background: white; padding: 40px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s;">
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <svg style="width: 36px; height: 36px; fill: white;"><use href="#icon-map"></use></svg>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px; color: #333;">Adres</h3>
+                <p style="color: #666; margin-bottom: 10px; line-height: 1.6;">Bizi ziyaret edebilirsiniz</p>
+                <p style="color: #667eea; font-weight: 600; font-size: 16px; line-height: 1.6;">Örnek Mahalle, Örnek Sokak No:1<br>İstanbul, Türkiye</p>
+            </div>
+
+            <!-- WhatsApp Card -->
+            <div style="background: white; padding: 40px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; transition: transform 0.3s;">
+                <div style="width: 80px; height: 80px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
+                    <svg style="width: 36px; height: 36px; fill: white;"><use href="#icon-whatsapp"></use></svg>
+                </div>
+                <h3 style="font-size: 22px; margin-bottom: 12px; color: #333;">WhatsApp</h3>
+                <p style="color: #666; margin-bottom: 10px; line-height: 1.6;">Anlık destek alın</p>
+                <a href="https://wa.me/901234567890" target="_blank" style="color: #25d366; text-decoration: none; font-weight: 600; font-size: 18px;">Mesaj Gönder</a>
+            </div>
+
+        </div>
+
+        <!-- Contact Form and Map Section -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+
+            <!-- Contact Form -->
+            <div class="contact-form" style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <h2 style="font-size: 32px; margin-bottom: 15px; color: #333;">Bize Mesaj Gönderin</h2>
+                <p style="color: #666; margin-bottom: 30px; line-height: 1.7;">
+                    Aklınıza takılan sorular veya projeleriniz hakkında detaylı bilgi almak için formu doldurun. En kısa sürede size dönüş yapacağız.
+                </p>
+
+                <form id="contactForm" style="display: flex; flex-direction: column; gap: 20px;">
+                    <div>
+                        <label for="name" style="display: block; margin-bottom: 8px; color: #333; font-weight: 600; font-size: 15px;">Adınız Soyadınız *</label>
+                        <input type="text" id="name" name="name" required
+                               placeholder="Adınız ve soyadınız"
+                               style="width: 100%; padding: 14px 18px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 15px; transition: border-color 0.3s;">
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div>
+                            <label for="email" style="display: block; margin-bottom: 8px; color: #333; font-weight: 600; font-size: 15px;">E-posta *</label>
+                            <input type="email" id="email" name="email" required
+                                   placeholder="ornek@email.com"
+                                   style="width: 100%; padding: 14px 18px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 15px; transition: border-color 0.3s;">
+                        </div>
+                        <div>
+                            <label for="phone" style="display: block; margin-bottom: 8px; color: #333; font-weight: 600; font-size: 15px;">Telefon</label>
+                            <input type="tel" id="phone" name="phone"
+                                   placeholder="+90 555 123 4567"
+                                   style="width: 100%; padding: 14px 18px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 15px; transition: border-color 0.3s;">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="subject" style="display: block; margin-bottom: 8px; color: #333; font-weight: 600; font-size: 15px;">Konu *</label>
+                        <select id="subject" name="subject" required
+                                style="width: 100%; padding: 14px 18px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 15px; transition: border-color 0.3s; background: white;">
+                            <option value="">Konu seçiniz</option>
+                            <option value="web-tasarim">Web Tasarım</option>
+                            <option value="seo">SEO Hizmetleri</option>
+                            <option value="yazilim">Yazılım Geliştirme</option>
+                            <option value="dijital-pazarlama">Dijital Pazarlama</option>
+                            <option value="danismanlik">Danışmanlık</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message" style="display: block; margin-bottom: 8px; color: #333; font-weight: 600; font-size: 15px;">Mesajınız *</label>
+                        <textarea id="message" name="message" required rows="6"
+                                  placeholder="Mesajınızı buraya yazınız..."
+                                  style="width: 100%; padding: 14px 18px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 15px; resize: vertical; transition: border-color 0.3s; font-family: inherit;"></textarea>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <input type="checkbox" id="consent" name="consent" required
+                               style="width: 18px; height: 18px; cursor: pointer;">
+                        <label for="consent" style="color: #666; font-size: 14px; cursor: pointer;">
+                            <a href="#" style="color: #667eea; text-decoration: none;">KVKK aydınlatma metnini</a> okudum ve kabul ediyorum.
+                        </label>
+                    </div>
+
+                    <button type="submit"
+                            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 16px 40px; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);">
+                        <svg style="width: 20px; height: 20px; fill: white; vertical-align: middle; margin-right: 8px;"><use href="#icon-send"></use></svg>
+                        Mesajı Gönder
+                    </button>
+                </form>
+
+                <div id="formMessage" style="display: none; margin-top: 20px; padding: 15px; border-radius: 8px; font-weight: 600;"></div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact-map" style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <h2 style="font-size: 32px; margin-bottom: 20px; color: #333;">Konum</h2>
+                <div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; border-radius: 8px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.7699620753316!2d28.97925631541923!3d41.01543827929894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9be92011c45%3A0x237a8d33e5d97a5d!2sSultan%20Ahmet%20Camii!5e0!3m2!1str!2str!4v1699999999999!5m2!1str!2str"
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Working Hours & Social Media -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 60px;">
+
+            <!-- Working Hours -->
+            <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <h2 style="font-size: 32px; margin-bottom: 25px; color: #333;">Çalışma Saatlerimiz</h2>
+                <div style="display: flex; flex-direction: column; gap: 15px;">
+                    <div style="display: flex; justify-content: space-between; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <span style="font-weight: 600; color: #333;">Pazartesi - Cuma</span>
+                        <span style="color: #667eea; font-weight: 600;">09:00 - 18:00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <span style="font-weight: 600; color: #333;">Cumartesi</span>
+                        <span style="color: #667eea; font-weight: 600;">10:00 - 16:00</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; padding: 15px; background: #f8f9fa; border-radius: 8px;">
+                        <span style="font-weight: 600; color: #333;">Pazar</span>
+                        <span style="color: #999; font-weight: 600;">Kapalı</span>
+                    </div>
+                </div>
+
+                <div style="margin-top: 30px; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white;">
+                    <p style="margin: 0; font-size: 15px; line-height: 1.7;">
+                        <strong>💡 Not:</strong> Acil durumlar için WhatsApp üzerinden 7/24 ulaşabilirsiniz.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Social Media & FAQ -->
+            <div style="background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                <h2 style="font-size: 32px; margin-bottom: 25px; color: #333;">Sosyal Medya</h2>
+                <p style="color: #666; margin-bottom: 25px; line-height: 1.7;">
+                    Güncel içeriklerimiz ve duyurularımız için bizi takip edin!
+                </p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="width: 50px; height: 50px; background: #1877f2; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 24px; height: 24px; fill: white;"><use href="#icon-facebook"></use></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: #333; font-size: 15px;">Facebook</div>
+                            <div style="color: #999; font-size: 13px;">@safirpusula</div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="width: 50px; height: 50px; background: #1da1f2; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 24px; height: 24px; fill: white;"><use href="#icon-twitter"></use></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: #333; font-size: 15px;">Twitter</div>
+                            <div style="color: #999; font-size: 13px;">@safirpusula</div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="width: 50px; height: 50px; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 24px; height: 24px; fill: white;"><use href="#icon-instagram"></use></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: #333; font-size: 15px;">Instagram</div>
+                            <div style="color: #999; font-size: 13px;">@safirpusula</div>
+                        </div>
+                    </a>
+
+                    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 15px; background: #f8f9fa; border-radius: 8px; text-decoration: none; transition: all 0.3s;">
+                        <div style="width: 50px; height: 50px; background: #0077b5; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg style="width: 24px; height: 24px; fill: white;"><use href="#icon-linkedin"></use></svg>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: #333; font-size: 15px;">LinkedIn</div>
+                            <div style="color: #999; font-size: 13px;">Safir Pusula</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section" style="background: white; padding: 50px 40px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+            <h2 style="font-size: 36px; margin-bottom: 15px; color: #333; text-align: center;">Sıkça Sorulan Sorular</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto;">
+                İşte en çok merak edilen sorular ve cevapları
+            </p>
+
+            <div style="max-width: 900px; margin: 0 auto;">
+
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" style="margin-bottom: 15px; border: 2px solid #f0f0f0; border-radius: 8px; overflow: hidden;">
+                    <div class="faq-question" style="padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: white; transition: background 0.3s;">
+                        <span style="font-weight: 600; color: #333; font-size: 16px;">Web sitesi yapımı ne kadar sürer?</span>
+                        <svg style="width: 24px; height: 24px; fill: #667eea; transition: transform 0.3s;"><use href="#icon-arrow-down"></use></svg>
+                    </div>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px; color: #666; line-height: 1.7;">
+                        Proje büyüklüğüne göre değişmekle birlikte, ortalama bir kurumsal web sitesi 2-4 hafta içerisinde tamamlanır. E-ticaret siteleri için bu süre 4-8 hafta olabilir.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" style="margin-bottom: 15px; border: 2px solid #f0f0f0; border-radius: 8px; overflow: hidden;">
+                    <div class="faq-question" style="padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: white; transition: background 0.3s;">
+                        <span style="font-weight: 600; color: #333; font-size: 16px;">SEO hizmeti nedir ve neden önemlidir?</span>
+                        <svg style="width: 24px; height: 24px; fill: #667eea; transition: transform 0.3s;"><use href="#icon-arrow-down"></use></svg>
+                    </div>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px; color: #666; line-height: 1.7;">
+                        SEO (Arama Motoru Optimizasyonu), web sitenizin Google gibi arama motorlarında üst sıralarda çıkmasını sağlar. Bu sayede organik trafik artışı ve daha fazla müşteriye ulaşabilirsiniz.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" style="margin-bottom: 15px; border: 2px solid #f0f0f0; border-radius: 8px; overflow: hidden;">
+                    <div class="faq-question" style="padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: white; transition: background 0.3s;">
+                        <span style="font-weight: 600; color: #333; font-size: 16px;">Fiyatlandırma nasıl yapılır?</span>
+                        <svg style="width: 24px; height: 24px; fill: #667eea; transition: transform 0.3s;"><use href="#icon-arrow-down"></use></svg>
+                    </div>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px; color: #666; line-height: 1.7;">
+                        Her proje benzersizdir ve ihtiyaçlarınıza göre özel fiyatlandırma yapılır. Detaylı bir teklif almak için bizimle iletişime geçebilir, projenizin kapsamını görüşebiliriz.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" style="margin-bottom: 15px; border: 2px solid #f0f0f0; border-radius: 8px; overflow: hidden;">
+                    <div class="faq-question" style="padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: white; transition: background 0.3s;">
+                        <span style="font-weight: 600; color: #333; font-size: 16px;">Proje teslimi sonrası destek veriyor musunuz?</span>
+                        <svg style="width: 24px; height: 24px; fill: #667eea; transition: transform 0.3s;"><use href="#icon-arrow-down"></use></svg>
+                    </div>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px; color: #666; line-height: 1.7;">
+                        Evet, tüm projelerimiz için 3 ay ücretsiz teknik destek sunuyoruz. Sonrasında isterseniz aylık bakım ve destek paketlerimizden birini tercih edebilirsiniz.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" style="margin-bottom: 0; border: 2px solid #f0f0f0; border-radius: 8px; overflow: hidden;">
+                    <div class="faq-question" style="padding: 20px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: white; transition: background 0.3s;">
+                        <span style="font-weight: 600; color: #333; font-size: 16px;">Hangi sektörlere hizmet veriyorsunuz?</span>
+                        <svg style="width: 24px; height: 24px; fill: #667eea; transition: transform 0.3s;"><use href="#icon-arrow-down"></use></svg>
+                    </div>
+                    <div class="faq-answer" style="display: none; padding: 0 20px 20px; color: #666; line-height: 1.7;">
+                        Tüm sektörlere hizmet veriyoruz. E-ticaret, kurumsal, eğitim, sağlık, turizm, inşaat ve daha birçok alanda başarılı projeler gerçekleştirdik. Portföyümüzü inceleyebilirsiniz.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="innerContainer" style="max-width: 1200px; margin: 0 auto; padding: 60px 20px 30px;">
+
+        <!-- Footer Columns -->
+        <div class="footerCols" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+
+            <!-- About Column -->
+            <div class="about col">
+                <h3 style="font-size: 20px; margin-bottom: 20px; color: white;">Hakkımızda</h3>
+                <p style="color: rgba(255,255,255,0.8); line-height: 1.7; margin-bottom: 20px;">
+                    Safir Pusula olarak, modern ve kullanıcı dostu web çözümleri sunuyoruz. Müşterilerimizin dijital dünyada başarılı olmaları için çalışıyoruz.
+                </p>
+                <div class="safirSocial" style="display: flex; gap: 10px;">
+                    <a href="#" style="width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                        <svg style="width: 18px; height: 18px; fill: white;"><use href="#icon-facebook"></use></svg>
+                    </a>
+                    <a href="#" style="width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                        <svg style="width: 18px; height: 18px; fill: white;"><use href="#icon-twitter"></use></svg>
+                    </a>
+                    <a href="#" style="width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                        <svg style="width: 18px; height: 18px; fill: white;"><use href="#icon-instagram"></use></svg>
+                    </a>
+                    <a href="#" style="width: 36px; height: 36px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                        <svg style="width: 18px; height: 18px; fill: white;"><use href="#icon-linkedin"></use></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Menu Column -->
+            <div class="menu col">
+                <h3 style="font-size: 20px; margin-bottom: 20px; color: white;">Hızlı Linkler</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 12px;"><a href="index.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">Ana Sayfa</a></li>
+                    <li style="margin-bottom: 12px;"><a href="index.html#hakkimizda" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">Hakkımızda</a></li>
+                    <li style="margin-bottom: 12px;"><a href="index.html#hizmetler" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">Hizmetler</a></li>
+                    <li style="margin-bottom: 12px;"><a href="index.html#urunler" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">Ürünler</a></li>
+                    <li style="margin-bottom: 12px;"><a href="category.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">Blog</a></li>
+                    <li style="margin-bottom: 12px;"><a href="contact.html" style="color: rgba(255,255,255,0.8); text-decoration: none; transition: color 0.3s;">İletişim</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="contact col">
+                <h3 style="font-size: 20px; margin-bottom: 20px; color: white;">İletişim</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 15px; display: flex; gap: 10px; color: rgba(255,255,255,0.8);">
+                        <svg style="width: 20px; height: 20px; fill: white; flex-shrink: 0;"><use href="#icon-map"></use></svg>
+                        <span>Örnek Mahalle, Örnek Sokak No:1, İstanbul</span>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; gap: 10px; color: rgba(255,255,255,0.8);">
+                        <svg style="width: 20px; height: 20px; fill: white; flex-shrink: 0;"><use href="#icon-phone"></use></svg>
+                        <a href="tel:+901234567890" style="color: rgba(255,255,255,0.8); text-decoration: none;">+90 123 456 7890</a>
+                    </li>
+                    <li style="margin-bottom: 15px; display: flex; gap: 10px; color: rgba(255,255,255,0.8);">
+                        <svg style="width: 20px; height: 20px; fill: white; flex-shrink: 0;"><use href="#icon-email"></use></svg>
+                        <a href="mailto:info@example.com" style="color: rgba(255,255,255,0.8); text-decoration: none;">info@example.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="copyright" style="text-align: center; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.6); font-size: 14px;">
+            <p style="margin: 0;">© 2025 Safir Pusula. Tüm hakları saklıdır. | HTML Version - License Free</p>
+        </div>
+
+    </div>
+</footer>
+
+<!-- WhatsApp Float Button -->
+<a href="https://wa.me/901234567890" target="_blank" class="whatsapp-float"
+   style="position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25d366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); z-index: 1000; transition: transform 0.3s;">
+    <svg style="width: 32px; height: 32px; fill: white;"><use href="#icon-whatsapp"></use></svg>
+</a>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+        style="position: fixed; bottom: 100px; right: 30px; width: 50px; height: 50px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 50%; color: white; cursor: pointer; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); z-index: 1000; display: none; transition: all 0.3s;">
+    <svg style="width: 24px; height: 24px; fill: white;"><use href="#icon-arrow-up"></use></svg>
+</button>
+
+<!-- SVG Icons Sprite -->
+<svg style="display:none;">
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+    </symbol>
+    <symbol id="icon-email" viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+    </symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+    </symbol>
+    <symbol id="icon-twitter" viewBox="0 0 24 24">
+        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+    </symbol>
+    <symbol id="icon-youtube" viewBox="0 0 24 24">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    </symbol>
+    <symbol id="icon-share" viewBox="0 0 24 24">
+        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+    </symbol>
+    <symbol id="icon-list" viewBox="0 0 24 24">
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+    </symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+    </symbol>
+    <symbol id="icon-arrow-down" viewBox="0 0 24 24">
+        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+    </symbol>
+    <symbol id="icon-send" viewBox="0 0 24 24">
+        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+    </symbol>
+</svg>
+
+<!-- JavaScript Files -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/lib/owl-carousel/owl.carousel.min.js"></script>
+<script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+// Scroll to Top Button
+window.addEventListener('scroll', function() {
+    const scrollBtn = document.getElementById('scrollToTop');
+    if (window.pageYOffset > 300) {
+        scrollBtn.style.display = 'block';
+    } else {
+        scrollBtn.style.display = 'none';
+    }
+});
+
+// Mobile Menu Toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.toggleMenu');
+    const mobileMenu = document.getElementById('mobileMenuContainer');
+    const socialToggle = document.querySelector('.social.withClose');
+    const mobileSocial = document.getElementById('mobileSocialContainer');
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+    }
+
+    if (socialToggle && mobileSocial) {
+        socialToggle.addEventListener('click', function() {
+            mobileSocial.classList.toggle('active');
+            socialToggle.classList.toggle('active');
+        });
+    }
+});
+
+// Contact Form Submission
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const formMessage = document.getElementById('formMessage');
+
+    // Simulate form submission
+    formMessage.style.display = 'block';
+    formMessage.style.background = '#d4edda';
+    formMessage.style.color = '#155724';
+    formMessage.style.border = '1px solid #c3e6cb';
+    formMessage.textContent = '✓ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.';
+
+    // Reset form
+    this.reset();
+
+    // Hide message after 5 seconds
+    setTimeout(() => {
+        formMessage.style.display = 'none';
+    }, 5000);
+});
+
+// Input focus effects
+document.querySelectorAll('input, textarea, select').forEach(input => {
+    input.addEventListener('focus', function() {
+        this.style.borderColor = '#667eea';
+        this.style.boxShadow = '0 0 0 3px rgba(102, 126, 234, 0.1)';
+    });
+
+    input.addEventListener('blur', function() {
+        this.style.borderColor = '#e0e0e0';
+        this.style.boxShadow = 'none';
+    });
+});
+
+// FAQ Accordion
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', function() {
+        const item = this.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        const icon = this.querySelector('svg');
+        const isOpen = answer.style.display === 'block';
+
+        // Close all other items
+        document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+        document.querySelectorAll('.faq-question svg').forEach(i => i.style.transform = 'rotate(0deg)');
+        document.querySelectorAll('.faq-question').forEach(q => q.style.background = 'white');
+
+        // Toggle current item
+        if (!isOpen) {
+            answer.style.display = 'block';
+            icon.style.transform = 'rotate(180deg)';
+            this.style.background = '#f8f9fa';
+        }
+    });
+});
+
+// Card hover effects
+document.querySelectorAll('.contact-info-cards > div, .faq-item').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-5px)';
+        this.style.boxShadow = '0 8px 20px rgba(0,0,0,0.12)';
+    });
+
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0)';
+        this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.08)';
+    });
+});
+</script>
+
+</body>
+</html>
