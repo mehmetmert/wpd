@@ -1,6 +1,16 @@
 <?php if(!defined('ABSPATH')) exit; ?>
 <?php
-// Ioncube Check
+/**
+ * SAFIR PUSULA WORDPRESS TEMASI
+ * Lisanssız çalışan özel versiyon
+ * Şifreli dosya yerine custom-functions.php kullanılıyor
+ */
+
+// Custom Functions (IonCube Replacement)
+include("functions/custom-functions.php");
+
+// NOT: Aşağıdaki IonCube kontrolü devre dışı bırakıldı
+/*
 	$safirPHPVersion = phpversion();
 	if(strlen($safirPHPVersion) >=3) $safirPHPVersion = substr($safirPHPVersion, 0, 3);
 
@@ -26,3 +36,4 @@
 	function safir_admin_ioncube_error() {
 	    printf( '<div class="notice notice-error"><p><strong>Sunucunuzda tema için gerekli olan Ioncube bileşeni yüklü değil. Hosting firmanızdan son sürüm Ioncube yüklemesini isteyiniz.</strong></p></div>');
 	}
+*/
