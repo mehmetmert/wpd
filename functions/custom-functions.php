@@ -467,18 +467,19 @@ function safir_register_widget_classes() {
             public function widget($args, $instance) {
                 global $widgetPlace;
 
-                // Widget değişkenlerini ayarla
-                extract($instance);
+                // Varsayılan değerler ayarla
+                $title = isset($instance['title']) ? $instance['title'] : '';
+                $slogan = isset($instance['slogan']) ? $instance['slogan'] : '';
+                $icon = isset($instance['icon']) ? $instance['icon'] : '';
+                $color = isset($instance['color']) ? $instance['color'] : '';
+                $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
+                $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
+                $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+                $count = isset($instance['count']) ? $instance['count'] : '';
+                $exclude = isset($instance['exclude']) ? $instance['exclude'] : '';
+                $include = isset($instance['include']) ? $instance['include'] : '';
 
-                // Varsayılan değerler
-                if (!isset($title)) $title = '';
-                if (!isset($slogan)) $slogan = '';
-                if (!isset($icon)) $icon = '';
-                if (!isset($color)) $color = '';
-                if (!isset($lineBg)) $lineBg = '';
-                if (!isset($grayBg)) $grayBg = '';
-
-                // Widget template'ini yükle
+                // Widget template'ini yükle (değişkenler scope'da olacak)
                 if ($this->template_file && file_exists(get_template_directory() . '/widgets/' . $this->template_file)) {
                     include(get_template_directory() . '/widgets/' . $this->template_file);
                 }
@@ -516,26 +517,7 @@ function safir_register_widget_classes() {
                     array('description' => 'Kategorileri gösterir'));
             }
 
-            public function widget($args, $instance) {
-                global $widgetPlace;
-
-                // Varsayılan değerler
-                $title = isset($instance['title']) ? $instance['title'] : '';
-                $slogan = isset($instance['slogan']) ? $instance['slogan'] : '';
-                $icon = isset($instance['icon']) ? $instance['icon'] : '';
-                $color = isset($instance['color']) ? $instance['color'] : '';
-                $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
-                $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
-                $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
-                $count = isset($instance['count']) ? $instance['count'] : '';
-                $exclude = isset($instance['exclude']) ? $instance['exclude'] : '';
-                $include = isset($instance['include']) ? $instance['include'] : '';
-
-                // Template'i yükle
-                if (file_exists(get_template_directory() . '/widgets/' . $this->template_file)) {
-                    include(get_template_directory() . '/widgets/' . $this->template_file);
-                }
-            }
+            // widget() metodu parent class'tan kullanılacak
         }
         register_widget('SfrCategoriesWidget');
     }
@@ -561,6 +543,9 @@ function safir_register_widget_classes() {
                 $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
                 $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
                 $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+                $count = isset($instance['count']) ? $instance['count'] : '';
+                $exclude = isset($instance['exclude']) ? $instance['exclude'] : '';
+                $include = isset($instance['include']) ? $instance['include'] : '';
                 $number = isset($instance['number']) ? $instance['number'] : 5;
                 $offset = isset($instance['offset']) ? $instance['offset'] : 0;
                 $postOrder = isset($instance['postOrder']) ? $instance['postOrder'] : '';
@@ -602,6 +587,9 @@ function safir_register_widget_classes() {
                 $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
                 $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
                 $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+                $count = isset($instance['count']) ? $instance['count'] : '';
+                $exclude = isset($instance['exclude']) ? $instance['exclude'] : '';
+                $include = isset($instance['include']) ? $instance['include'] : '';
                 $number = isset($instance['number']) ? $instance['number'] : 5;
                 $offset = isset($instance['offset']) ? $instance['offset'] : 0;
 
@@ -668,6 +656,9 @@ function safir_register_widget_classes() {
                 $lineBg = isset($instance['lineBg']) ? $instance['lineBg'] : '';
                 $grayBg = isset($instance['grayBg']) ? $instance['grayBg'] : '';
                 $scroll = isset($instance['scroll']) ? $instance['scroll'] : 'list';
+                $count = isset($instance['count']) ? $instance['count'] : '';
+                $exclude = isset($instance['exclude']) ? $instance['exclude'] : '';
+                $include = isset($instance['include']) ? $instance['include'] : '';
 
                 // WP_Query args
                 $args = array(
